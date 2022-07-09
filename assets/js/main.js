@@ -14,10 +14,22 @@ if(navToggle){
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
-
+if(navClose)
+{
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
 
 /*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav_link')
 
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // hide nav menu when clicking on an nav item
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
 
