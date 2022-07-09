@@ -391,7 +391,30 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skills_list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.skills_list-item {
+  margin: 0.5em;
+  border-radius: 25px;
+}
+
+.btn--plain {
+  text-transform: initial;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
+}
+
+.btn--plain:hover {
+  transform: translateY(-4px);
+}
 
 /*==================== QUALIFICATION ====================*/
 
