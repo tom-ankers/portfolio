@@ -20,12 +20,12 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav_logo">Thomas</a>
+                <a href="#" class="nav_logo">Thomas Ankers</a>
 
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list grid">
                         <li class="nav_item">
-                            <a href="#home" class="nav_link">
+                            <a href="#home" class="nav_link active-link">
                                 <i class="uil uil-estate nav_icon"></i> Home
                             </a>
                         </li>
@@ -45,15 +45,22 @@
                             </a>
                         </li>
                         <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-laptop nav_icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav_item">
                             <a href="#contact" class="nav_link">
                                 <i class="uil uil-message nav_icon"></i> Contact
                             </a>
                         </li>
                     </ul>
                     <i class="uil uil-times nav_close" id="nav-close"></i>
-                </div>
-
+                </div>           
                 <div class="nav_btns">
+                    <!-- Light/Dark mode -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -327,6 +334,7 @@
                         </div>
                     </div>
                 </div>
+            </section>
 
             <!--==================== EXPERIENCE ====================-->
             <section class="experience section" id="experience">
@@ -575,11 +583,42 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
+         <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Thomas Ankers</h1>
+                    <span class="footer_subtitle">Senior Software Engineer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#experience" class="footer_link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://www.linkedin.com/in/thomas-ankers-244437107/" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/tom-ankers" target="_blank" class="footer_social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer_copy">&#169 Thomas Ankers</p>
+         </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
