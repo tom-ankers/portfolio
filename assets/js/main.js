@@ -32,7 +32,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills_content')
+/*const skillsContent = document.getElementsByClassName('skills_content')
     skillsHeader = document.querySelectorAll('.skills_header')
 
 function toggleSkills(){
@@ -48,7 +48,7 @@ function toggleSkills(){
 
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
-})
+})*/
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
