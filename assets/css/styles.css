@@ -667,7 +667,29 @@ img {
 
 
 /*==================== PORTFOLIO ====================*/
+.project_title{
+  text-align: center;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
 
+.project_container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project_description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.project_content{
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: .25rem;
+  transition: .3s;
+}
 
 /*==================== CONTACT ME ====================*/
 .contact_container{
@@ -871,7 +893,8 @@ img {
   
   .about_container
   .skills_container
-  .footer_container{
+  .footer_container
+  .project_container{
     grid-template-columns: repeat(2, 1fr);
   }
 
