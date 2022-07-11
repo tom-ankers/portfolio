@@ -470,9 +470,22 @@ img {
   transition: .4s;
 }
 
-.skills_list{
+/*.skills_list{
   row-gap: 1.5rem;
   padding-left: 2.7rem;
+}*/
+
+.skills-list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list-item {
+  margin: 0.5em;
 }
 
 .skills_titles{
