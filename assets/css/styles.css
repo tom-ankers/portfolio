@@ -667,7 +667,30 @@ img {
 
 
 /*==================== PORTFOLIO ====================*/
+.project_title{
+  text-align: center;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
 
+.project_container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: var(--mb-2-5);
+}
+
+.project_description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.project_content{
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: .25rem;
+  transition: .3s;
+}
 
 /*==================== CONTACT ME ====================*/
 .contact_container{
@@ -794,6 +817,21 @@ img {
   background-color: var(--text-color-light);
 }
 
+/*========== iFrame ==========*/
+.iframe_container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe_container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
@@ -856,7 +894,8 @@ img {
   
   .about_container
   .skills_container
-  .footer_container{
+  .footer_container
+  .project_container{
     grid-template-columns: repeat(2, 1fr);
   }
 
